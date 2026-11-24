@@ -1,0 +1,7 @@
+*{box-sizing:border-box}body{margin:0;background:#F6F6F2;color:#121212;font:16px/1.6 -apple-system,"Helvetica Neue",Arial,sans-serif}
+main{max-width:720px;margin:0 auto;padding:48px 24px 80px}
+.logo{display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:#121212;font-weight:800;font-size:20px}
+.logo i{width:32px;height:32px;border-radius:9px;background:#C9E300;display:inline-flex;align-items:center;justify-content:center}
+.logo i b{width:13px;height:13px;border:3px solid #121212;border-radius:50%}
+h1{font-size:34px;letter-spacing:-.5px;margin:32px 0 4px}h2{font-size:20px;margin:32px 0 8px}
+.muted{color:#6B6B66}nav a{margin-right:16px;color:#121212}footer{margin-top:48px;color:#6B6B66;font-size:14px}

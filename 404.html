@@ -1,0 +1,24 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="/style.css"><title>Restrung</title></head><body><main><a class="logo" href="https://4rjundev.github.io/restrung-site/"><i><b></b></i>Restrung</a>
+<div id="tag" hidden>
+<h1>This racket is tracked with Restrung.</h1>
+<p class="muted">The sticker is a tag for the Restrung app. If the racket is yours, open the app to see its latest order; if you string at the shop, the app shows you whose racket this is.</p>
+<p><a id="open" class="button" href="#" style="display:inline-block;background:#121212;color:#fff;padding:14px 22px;border-radius:12px;text-decoration:none;font-weight:600">Open in Restrung</a></p>
+<p class="muted">Don't have the app yet? Restrung is in beta on TestFlight and coming to the App Store; ask at the desk for an invite, or email <a href="mailto:racketsrestrung@gmail.com">racketsrestrung@gmail.com</a>.</p>
+</div>
+<div id="missing" hidden>
+<h1>That page isn't here.</h1>
+<p class="muted">Try the <a href="https://4rjundev.github.io/restrung-site/">Restrung home page</a>.</p>
+</div>
+<footer>AD Studios · Kingston, Ontario, Canada · <a href="mailto:racketsrestrung@gmail.com">racketsrestrung@gmail.com</a></footer></main>
+<script>
+// GitHub Pages serves this for any unknown path; a sticker link is /t/<token>, printed in capitals on the small stickers
+var m = location.pathname.match(/\/t\/([0-9a-f]{11,12}|[0-9a-f]{24})\/?$/i);
+if (m) {
+  var token = m[1].toLowerCase();
+  document.getElementById('tag').hidden = false;
+  document.getElementById('open').href = 'restrung://tag/' + token;
+  document.title = 'Restrung tag';
+} else {
+  document.getElementById('missing').hidden = false;
+}
+</script></body></html>
