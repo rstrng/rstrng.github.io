@@ -1,0 +1,12 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["YFQJ9XUBH6.com.restrung.app"],
+        "components": [
+          { "/": "/t/*", "caseSensitive": false, "comment": "A racket sticker: opens that racket in the app" }
+        ]
+      }
+    ]
+  }
+}
